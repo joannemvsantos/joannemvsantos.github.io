@@ -56,21 +56,50 @@
                                 <div class="span-3-25">
                                     <form method="post" action="https://formspree.io/f/mdorqpln">
                                         <div class="fields">
-                                            <div class="field half">
-                                                <label for="name">Name</label>
-                                                <input type="text" name="name" id="name" />
+                                            <div class="field third">
+                                                <label for="demo-name">Name</label>
+                                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
                                             </div>
-                                            <div class="field half">
-                                                <label for="email">Email</label>
-                                                <input type="email" name="email" id="email" />
+                                            <div class="field third">
+                                                <label for="demo-email">Email</label>
+                                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+                                            </div>
+                                            <div class="field third">
+                                                <label for="demo-category">Category</label>
+                                                <div class="select-wrapper">
+                                                    <select name="demo-category" id="demo-category">
+                                                        <option value="">-</option>
+                                                        <option value="1">Full-time opportunities</option>
+                                                        <option value="1">Freelance</option>
+                                                        <option value="1">Research</option>
+                                                        <option value="1">Just saying hi</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="field quarter">
+                                                <input type="radio" id="demo-priority-low" name="demo-priority" class="color2" checked />
+                                                <label for="demo-priority-low">Low Priority</label>
+                                            </div>
+                                            <div class="field quarter">
+                                                <input type="radio" id="demo-priority-high" name="demo-priority" class="color2" />
+                                                <label for="demo-priority-high">High Priority</label>
+                                            </div>
+                                            <div class="field quarter">
+                                                <input type="checkbox" id="demo-copy" name="demo-copy" class="color2" />
+                                                <label for="demo-copy">Email a copy</label>
+                                            </div>
+                                            <div class="field quarter">
+                                                <input type="checkbox" id="demo-human" name="demo-human" class="color2" checked />
+                                                <label for="demo-human">Not a robot</label>
                                             </div>
                                             <div class="field">
-                                                <label for="message">Message</label>
-                                                <textarea name="message" id="message" rows="4"></textarea>
+                                                <label for="demo-message">Message</label>
+                                                <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="2"></textarea>
                                             </div>
                                         </div>
                                         <ul class="actions">
-                                            <li><input type="submit" value="Send Message" class="button primary" /></li>
+                                            <li><input type="submit" value="Send Message" class="primary color2" /></li>
+                                            <li><input type="reset" value="Reset" /></li>
                                         </ul>
                                     </form>
                                 </div>
@@ -128,12 +157,12 @@
                             <div class="inner">
                                 <h4>Responsibilities</h4>
                                 <ul class="alt">
-                                    <li style="font-size: 15px">Developed embedded software functions, including command logic for downlink radio carriers and utilities for database access. Parsed u-boot messages and Kernel ring buffer (dmesg) to develop new commands to determine the flash type.</li>
-                                    <li style="font-size: 15px">Verified software using the ETSW runtime environment under Linux based on Yocto and programmed in C, C++, and Python under Version Control System Git. Addressed various improvements such as compression of flashed software into module containers</li>
-                                    <li style="font-size: 15px">Implemented test cases to verify calibration data such as PA bias, VGA dynamic range, TOR step size, attenuation, TOR gain, and frequency, utilizing C++ STL containers such as vectors, and maps. Also, facilitated TOR (Transmitter Observer Receiver) basic functionalities such as checking noise level, range of gain table, ADC headroom over complete TX band, maximum and minimum gain for all power classes, and calibration temperature. Additionally, contributed to VGA (Voltage Gain Amplifier) basic functionalities like dynamic range of gain table, DSA (Digital Step Attenuators), and calibration temperature.</li>
-                                    <li style="font-size: 15px">Implemented CICD using Jenkins pipelines and Python. Developed Jenkins pipeline for uploading binaries and artifacts to HTML storage sites, integrated machine-readable components into pipelines by parsing repositories of different radios, and developed interface for resigning revoked artifacts.</li>
-                                    <li style="font-size: 15px">Collaborated with product designers in prototype debugging and performance evaluation, involving read/write lower-level registers mapping to hardware (HW), verification using signal generators/analyzers, power meters, and numerically-controlled oscillators to support the generation of continuous wave signals and 5G signals for specific NR bands, RF ports, and ASICs.</li>
-                                    <li style="font-size: 15px">Documented RF test solutions for radio products, utilizing C++ file manipulations with the fstream library and C++ static methods. Implemented additional human-readable logging stored in the device under test.</li>
+                                    <li style="font-size: 13px">Developed embedded software functions, including command logic for downlink radio carriers and utilities for database access. Parsed u-boot messages and Kernel ring buffer (dmesg) to develop new commands to determine the flash type.</li>
+                                    <li style="font-size: 13px">Verified software using the ETSW runtime environment under Linux based on Yocto and programmed in C, C++, and Python under Version Control System Git. Addressed various improvements such as compression of flashed software into module containers</li>
+                                    <li style="font-size: 13px">Implemented test cases to verify calibration data such as PA bias, VGA dynamic range, TOR step size, attenuation, TOR gain, and frequency, utilizing C++ STL containers such as vectors, and maps. Also, facilitated TOR (Transmitter Observer Receiver) basic functionalities such as checking noise level, range of gain table, ADC headroom over complete TX band, maximum and minimum gain for all power classes, and calibration temperature. Additionally, contributed to VGA (Voltage Gain Amplifier) basic functionalities like dynamic range of gain table, DSA (Digital Step Attenuators), and calibration temperature.</li>
+                                    <li style="font-size: 13px">Implemented CICD using Jenkins pipelines and Python. Developed Jenkins pipeline for uploading binaries and artifacts to HTML storage sites, integrated machine-readable components into pipelines by parsing repositories of different radios, and developed interface for resigning revoked artifacts.</li>
+                                    <li style="font-size: 13px">Collaborated with product designers in prototype debugging and performance evaluation, involving read/write lower-level registers mapping to hardware (HW), verification using signal generators/analyzers, power meters, and numerically-controlled oscillators to support the generation of continuous wave signals and 5G signals for specific NR bands, RF ports, and ASICs.</li>
+                                    <li style="font-size: 13px">Documented RF test solutions for radio products, utilizing C++ file manipulations with the fstream library and C++ static methods. Implemented additional human-readable logging stored in the device under test.</li>
                                 </ul>
                             </div>
                             <div class="image filtered tinted" data-position="top right" style="filter: brightness(140%)">
@@ -150,10 +179,10 @@
                             <div class="inner">
                                 <h4>Responsibilities</h4>
                                 <ul class="alt">
-                                    <li style="font-size: smaller">Led and supervised a team of six engineers, ensuring their mentorship and streamlining the onboarding process for new members. Pioneered the implementation of operational frameworks, notably introducing Agile methodologies and integrating version control systems like Git. Instituted effective practices such as regular standup meetings, introduced automation processes, and documented test results to enhance overall efficiency. Served as the key liaison for global managers, and conducted weekly meetings with customers, ensuring alignment on project objectives.</li>
-                                    <li style="font-size: smaller">Developed software solutions and test cases according to 3GPP specifications TS 38.523-1 and requirements for 5G and 4G protocols using TTCN-3. Led Anritsu's achievement of 3GPP Approval for the World's First 5G New Radio Standalone Mode Carrier Aggregation Test. Collaborated with a key customer to verify the industry’s first 5G NR Protocol Conformance Test in the Sub-6 GHz Frequency Range.</li>
-                                    <li style="font-size: smaller">Automated test case validation for GCF / PTCRB using Python. Verified new industry 5G test cases based on 3GPP TS 38.523–1 for RAN5, including NSA FR1 measurement test cases, NSA FR2 measurement test cases, and SA FR1 CA test cases, among others.</li>
-                                    <li style="font-size: smaller">Analyzed the MAC, RLC, PDCP, and RRC layers using test equipment and trace loggers like Protocol Analyzer, QXDM, and QPST. Contributed to the development and verification of various 5G test cases involving different aspects such as NSA FR2 DTCH, RLC, PDCP, SA FR1 VONR, and collaboration with other partners</li>
+                                    <li style="font-size: 15px">Led and supervised a team of six engineers, ensuring their mentorship and streamlining the onboarding process for new members. Pioneered the implementation of operational frameworks, notably introducing Agile methodologies and integrating version control systems like Git. Instituted effective practices such as regular standup meetings, introduced automation processes, and documented test results to enhance overall efficiency. Served as the key liaison for global managers, and conducted weekly meetings with customers, ensuring alignment on project objectives.</li>
+                                    <li style="font-size: 15px">Developed software solutions and test cases according to 3GPP specifications TS 38.523-1 and requirements for 5G and 4G protocols using TTCN-3. Led Anritsu's achievement of 3GPP Approval for the World's First 5G New Radio Standalone Mode Carrier Aggregation Test. Collaborated with a key customer to verify the industry’s first 5G NR Protocol Conformance Test in the Sub-6 GHz Frequency Range.</li>
+                                    <li style="font-size: 15px">Automated test case validation for GCF / PTCRB using Python. Verified new industry 5G test cases based on 3GPP TS 38.523–1 for RAN5, including NSA FR1 measurement test cases, NSA FR2 measurement test cases, and SA FR1 CA test cases, among others.</li>
+                                    <li style="font-size: 15px">Analyzed the MAC, RLC, PDCP, and RRC layers using test equipment and trace loggers like Protocol Analyzer, QXDM, and QPST. Contributed to the development and verification of various 5G test cases involving different aspects such as NSA FR2 DTCH, RLC, PDCP, SA FR1 VONR, and collaboration with other partners</li>
                                 </ul>
                             </div>
                             <div class="image filtered tinted" data-position="top right" style="filter: brightness(70%)">
