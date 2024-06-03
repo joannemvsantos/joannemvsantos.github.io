@@ -35,7 +35,7 @@
 								<div class="content color0 span-3-75">
 									<h1 class="major">Hello, my name<br />
 									is Joanne Santos</h1>
-									<p>I am a Senior Software Engineer based in Finland, with six years of industry experience.  My specialized focus revolves around software development, particularly in wireless mobile communication, leveraging C/C++ on embedded systems, TTCN-3 for 3GPP 4G and 5G protocol conformance, and DevOps, using Python and tools like Jenkins, Groovy, and bash scripts, to drive continuous integration and continuous development.</p>
+									<p>I am a Senior Software Engineer based in Finland, with seven years of industry experience.  My specialized focus revolves around software development, particularly in wireless mobile communication, leveraging C/C++ on embedded systems, TTCN-3 for 3GPP 4G and 5G protocol conformance, and Devops, using Python and tools like Jenkins, Groovy, and bash scripts, to drive continuous integration and continuous development.</p>
 									<ul class="actions">
 										<li><a href="#first" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
 									</ul>
@@ -117,7 +117,6 @@
                                     <ul class="contact-icons color1">
                                         <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/joannemvsantos/">joannemvsantos</a></li>
                                         <li class="icon brands fa-github"><a href="https://github.com/joannemvsantos">joannemvsantos</a></li>
-                                        <li class="icon brands fa-medium-m"><a href="https://medium.com/@jhomvsantos">@jhomvsantos</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -165,9 +164,10 @@
                                         <li style="font-size: smaller;">Unit testing (pytest / gtest)</li>
                                         <li style="font-size: smaller;">Static / dynamic analysis (Clang / Coverity / Valgrind / Gcovr)</li>
                                         <li style="font-size: smaller;">3GPP standards (4G / 5G)</li>
-                                        <li style="font-size: smaller;">LLVM</li>
-                                        <li style="font-size: smaller;">Containers (Docker / Kubernetes)</li>
-                                        <li style="font-size: smaller;">Yocto</li>
+                                        <li style="font-size: smaller;">Containers (Docker)</li>
+                                        <li style="font-size: smaller;">Build systems (Yocto / Cmake) </li>
+                                        <li style="font-size: smaller;">Synchronization constructs and multithreading(mutexes, semaphores)</li>
+                                        <li style="font-size: smaller;">Remote procedure calls (gRPC)</li>
                                     </ul>
                                 </div>
                                 <div>
@@ -189,10 +189,12 @@
                                 <div class="inner">
                                     <h4>Responsibilities</h4>
                                     <ul class="alt">
-                                        <li style="font-size: smaller">Drove the development and maintenance of DevOps and Continuous Integration/Continuous Development (CI/CD) functionalities for enhancing digital pre-distortion (DPD) and added support for software version reporting, artifactory management, Groovy and bash scripting, Jenkins pipeline maintenance, Gerrit and Zuul integration using YAML, Jenkins shared libraries management and Docker containerization.</li>
-                                        <li style="font-size: smaller">Resolved performance issues using static/dynamic analysis, C/C++ optimizations, and improved Coverity issues through C++ static code analysis tools, Coverity, C++ rule of 5 principles, and performance optimizations.</li>
-                                        <li style="font-size: smaller">Integrated team code quality tools into code integration and releases using Jenkins, Clang-format, Clang-tidy, GCC sanitizer, static vs dynamic analysis tools, and metrics such as line and branch coverages for adherence to standard industry  and company code styles.</li>
-                                        <li style="font-size: smaller">Integrated legacy unit tests for cross-compiler targets into the data management platform using emulators, various testing frameworks, QEMU, Cmocka, Unity testing framework, JUnit, and Splunk, driving comprehensive testing strategies and efficient testing and validation.</li>
+                                        <li style="font-size: smaller">Drove the development and maintenance of DevOps and Continuous Integration/Continuous Development (CI/CD) functionalities for our team including build systems in C/C++, software version management, artifactory management, Python, Groovy and bash scripting, Jenkins pipeline maintenance, Gerrit and Zuul integration, Jenkins, Docker containerization, and Yocto upgrade.</li>
+                                        <li style="font-size: smaller">Developed new Python classes and utilities to support continuous integration pipelines and various automations for Gerrit, pipeline integration, and email reporting using Python modules such as subprocess, json, shutil, pathlib, logging, etc.</li>
+                                        <li style="font-size: smaller">Verified embedded software using Yocto, emulator, and hardware, include .ext2 filesystems and .fit images</li>
+                                        <li style="font-size: smaller">Integrated team code quality tools into code integration and releases using Jenkins, Coverity, Clang-format, Clang-tidy, GCC sanitizer, static vs dynamic analysis tools, and metrics such as line and branch coverages for adherence to standard industry and company code styles.</li>
+                                        <li style="font-size: smaller">Integrated legacy unit tests for cross-compiler targets into the data management platform using emulators, various testing frameworks, QEMU, Cmocka, Unity testing framework, JUnit, and Splunk, driving testing and validation.</li>
+                                        <li style="font-size: smaller">Collaborated with software enegineers in debugging and documenting software solutions via Confluence</li>
                                     </ul>
                                 </div>
 								<div class="image filtered tinted" data-position="top right" style="filter: brightness(100%)">
@@ -209,12 +211,12 @@
                             <div class="inner">
                                 <h4>Responsibilities</h4>
                                 <ul class="alt">
-                                    <li style="font-size: 13px">Developed embedded software functions, including command logic for downlink radio carriers and utilities for database access. Parsed u-boot messages and Kernel ring buffer (dmesg) to develop new commands to determine the flash type.</li>
-                                    <li style="font-size: 13px">Verified software using the ETSW runtime environment under Linux based on Yocto and programmed in C, C++, and Python under Version Control System Git. Addressed various improvements such as compression of flashed software into module containers</li>
-                                    <li style="font-size: 13px">Implemented test cases to verify calibration data such as PA bias, VGA dynamic range, TOR step size, attenuation, TOR gain, and frequency, utilizing C++ STL containers such as vectors, and maps. Also, facilitated TOR (Transmitter Observer Receiver) basic functionalities such as checking noise level, range of gain table, ADC headroom over complete TX band, maximum and minimum gain for all power classes, and calibration temperature. Additionally, contributed to VGA (Voltage Gain Amplifier) basic functionalities like dynamic range of gain table, DSA (Digital Step Attenuators), and calibration temperature.</li>
-                                    <li style="font-size: 13px">Implemented CICD using Jenkins pipelines and Python. Developed Jenkins pipeline for uploading binaries and artifacts to HTML storage sites, integrated machine-readable components into pipelines by parsing repositories of different radios, and developed interface for resigning revoked artifacts.</li>
-                                    <li style="font-size: 13px">Collaborated with product designers in prototype debugging and performance evaluation, involving read/write lower-level registers mapping to hardware (HW), verification using signal generators/analyzers, power meters, and numerically-controlled oscillators to support the generation of continuous wave signals and 5G signals for specific NR bands, RF ports, and ASICs.</li>
-                                    <li style="font-size: 13px">Documented RF test solutions for radio products, utilizing C++ file manipulations with the fstream library and C++ static methods. Implemented additional human-readable logging stored in the device under test.</li>
+                                    <li style="font-size: smaller">Developed embedded software functions, including command logic for downlink radio carriers and utilities for database access. Parsed u-boot messages and Kernel ring buffer (dmesg) to develop new commands to determine the flash type.</li>
+                                    <li style="font-size: smaller">Verified software using the ETSW runtime environment under Linux based on Yocto and programmed in C, C++, and Python under Version Control System Git. Addressed various improvements such as compression of flashed software into module containers</li>
+                                    <li style="font-size: smaller">Implemented test cases to verify calibration data and basic functionalities of various components such as PA bias, VGA dynamic range, TOR step size, gain, frequency, utilizing C++ Standard Library containers and facilitating the verification of component performance.</li>
+                                    <li style="font-size: smaller">Implemented CICD using Jenkins pipelines and Python. Developed Jenkins pipeline for uploading binaries and artifacts to HTML storage sites, integrated machine-readable components into pipelines by parsing repositories of different radios, and developed interface for resigning revoked artifacts.</li>
+                                    <li style="font-size: smaller">Collaborated with product designers in prototype debugging, involving read/write lower-level registers mapping to hardware (HW), verification using signal generators/analyzers, power meters, and numerically-controlled oscillators to support the generation of continuous wave signals and 5G signals for specific NR bands, RF ports, and ASICs.</li>
+                                    <li style="font-size: smaller">Documented RF test solutions for radio products, utilizing C++ file manipulations with the fstream library and C++ static methods. Implemented additional human-readable logging stored in the device under test.</li>
                                 </ul>
                             </div>
                             <div class="image filtered tinted" data-position="top right" style="filter: brightness(90%)">
@@ -231,10 +233,10 @@
                             <div class="inner">
                                 <h4>Responsibilities</h4>
                                 <ul class="alt">
-                                    <li style="font-size: 15px">Led and supervised a team of six engineers, ensuring their mentorship and streamlining the onboarding process for new members. Pioneered the implementation of operational frameworks, notably introducing Agile methodologies and integrating version control systems like Git. Instituted effective practices such as regular standup meetings, introduced automation processes, and documented test results to enhance overall efficiency. Served as the key liaison for global managers, and conducted weekly meetings with customers, ensuring alignment on project objectives.</li>
-                                    <li style="font-size: 15px">Developed software solutions and test cases according to 3GPP specifications TS 38.523-1 and requirements for 5G and 4G protocols using TTCN-3. Led Anritsu's achievement of 3GPP Approval for the World's First 5G New Radio Standalone Mode Carrier Aggregation Test. Collaborated with a key customer to verify the industry’s first 5G NR Protocol Conformance Test in the Sub-6 GHz Frequency Range.</li>
-                                    <li style="font-size: 15px">Automated test case validation for GCF / PTCRB using Python. Verified new industry 5G test cases based on 3GPP TS 38.523–1 for RAN5, including NSA FR1 measurement test cases, NSA FR2 measurement test cases, and SA FR1 CA test cases, among others.</li>
-                                    <li style="font-size: 15px">Analyzed the MAC, RLC, PDCP, and RRC layers using test equipment and trace loggers like Protocol Analyzer, QXDM, and QPST. Contributed to the development and verification of various 5G test cases involving different aspects such as NSA FR2 DTCH, RLC, PDCP, SA FR1 VONR, and collaboration with other partners</li>
+                                    <li style="font-size: smaller">Led and supervised a team of six engineers, ensuring their mentorship and streamlining the onboarding process for new members. Pioneered the implementation of operational frameworks, notably introducing Agile methodologies and integrating version control systems like Git. Instituted effective practices such as regular standup meetings, introduced automation processes, and documented test results to enhance overall efficiency. Served as the key liaison for global managers, and conducted weekly meetings with customers, ensuring alignment on project objectives.</li>
+                                    <li style="font-size: smaller">Developed software solutions and test cases according to 3GPP specifications TS 38.523-1 and requirements for 5G and 4G protocols using TTCN-3. Led Anritsu's achievement of 3GPP Approval for the World's First 5G New Radio Standalone Mode Carrier Aggregation Test. Collaborated with a key customer to verify the industry’s first 5G NR Protocol Conformance Test in the Sub-6 GHz Frequency Range.</li>
+                                    <li style="font-size: smaller">Automated test case validation for GCF / PTCRB using Python. Verified new industry 5G test cases based on 3GPP TS 38.523–1 for RAN5, including NSA FR1 measurement test cases, NSA FR2 measurement test cases, and SA FR1 CA test cases, among others.</li>
+                                    <li style="font-size: smaller">Analyzed the MAC, RLC, PDCP, and RRC layers using test equipment and trace loggers like Protocol Analyzer, QXDM, and QPST. Contributed to the development and verification of various 5G test cases involving different aspects such as NSA FR2 DTCH, RLC, PDCP, SA FR1 VONR, and collaboration with other partners</li>
                                 </ul>
                             </div>
                             <div class="image filtered tinted" data-position="top right" style="filter: brightness(70%)">
