@@ -22,7 +22,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <link rel="icon" type="image/png" href="images/pic10.png">
 	<style>
-		.panel > .inner.nokia-highlights { display: grid; grid-template-columns: repeat(3, 22rem); column-gap: 2rem; align-content: center; align-items: start; }
+		.panel > .inner.nokia-highlights { display: grid; grid-template-columns: repeat(4, 22rem); column-gap: 2rem; align-content: center; align-items: start; }
 		@media (max-width: 736px) { .panel > .inner.nokia-highlights { grid-template-columns: 1fr; } }
 	</style>
 </head>
@@ -232,13 +232,20 @@
 										<ul class="alt" style="margin: 0;">
 											<li style="font-size: smaller">Led the Yocto 5.0 (Scarthgap) migration across several repositories and platforms, and later enabled warnings-as-errors for embedded Yocto builds across 8 repositories.</li>
 											<li style="font-size: smaller">Designed a merge gate that runs an adaptation-algorithm test on every change between two teams; it caught a real incompatible change within days.</li>
-											<li style="font-size: smaller">Set up CI for a brand-new repository end to end in 3 days: review gates, clang-format and clang-tidy, Coverity, SonarQube and release tag automation.</li>
+											<li style="font-size: smaller">Moved a hand-run hardware test into automated CI, with its first green run in about 60 minutes, and replaced checked-in binaries with reproducible source builds, including a device-tree overlay rebuilt by decoding the binary.</li>
+										</ul>
+									</div>
+									<div>
+										<ul class="alt" style="margin: 0;">
+											<li style="font-size: smaller">Set up CI for three brand-new repositories end to end: review gates, clang-format and clang-tidy, Coverity, SonarQube and release tag automation. The first took 3 days, and the two newest build a full Yocto target image (about 6000 build tasks) in their pre-merge job.</li>
+											<li style="font-size: smaller">Measured the impact of a stricter clang-tidy rule set on a large C++ code base (2062 findings, only 5% from the new checks), then scoped the CI gate with phased file exclusions tested through all-files dummy changes.</li>
+											<li style="font-size: smaller">Improved test diagnostics: failed embedded tests now save a memory log in every suite sharing one teardown, and nightly test logs are searchable in Splunk with a usage guide.</li>
 										</ul>
 									</div>
 									<div>
 										<ul class="alt" style="margin: 0;">
 											<li style="font-size: smaller">Reduced maintenance load by deleting code: about 31k lines of vendored third-party libraries, 1.9k lines of emulator pipelines, 1.1k lines of Groovy through shared pipeline functions and 1.8k lines of deprecated pipelines.</li>
-											<li style="font-size: smaller">Applied data and AI to engineering productivity: built the first flaky-test detection scripts on CI data in Splunk, tagged Robot Framework tests automatically from stability data (proof of concept), built an AI-assisted weekly CI health report that flags "green but empty" test runs, and reviewed AI-generated Linux kernel patches with before-and-after builds and kernel-version guards.</li>
+											<li style="font-size: smaller">Applied data and AI to engineering productivity: built the first flaky-test detection scripts on CI data in Splunk, tagged Robot Framework tests automatically from stability data (proof of concept), built an AI-assisted weekly CI health report that flags "green but empty" test runs, and reviewed AI-generated Linux kernel patches with before-and-after builds and kernel-version guards. I use AI coding agents daily and package the workflows as reusable team skills.</li>
 											<li style="font-size: smaller">Merged 900+ changes since joining, including 53 changes across 21 repositories in the busiest month.</li>
 										</ul>
 									</div>
