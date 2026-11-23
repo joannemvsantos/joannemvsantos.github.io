@@ -238,7 +238,7 @@
 									<div>
 										<ul class="alt" style="margin: 0;">
 											<li style="font-size: smaller">Set up CI for three brand-new repositories end to end: review gates, clang-format and clang-tidy, Coverity, SonarQube and release tag automation. The first took 3 days, and the two newest build a full Yocto target image (about 6000 build tasks) in their pre-merge job.</li>
-											<li style="font-size: smaller">Measured the impact of a stricter clang-tidy rule set on a large C++ code base (2062 findings, only 5% from the new checks), then scoped the CI gate with phased file exclusions tested through all-files dummy changes.</li>
+											<li style="font-size: smaller">Measured the impact of a stricter clang-tidy rule set on a large C++ code base (2062 findings, only 5% from the new checks), then scoped the CI gate with phased file exclusions tested through all-files dummy changes. Also traced a CI-only static-analysis failure to target-only sources missing from the compile database and fixed it in sandbox builds with an opt-in CMake library, going from compile-error failures to 39 normal findings.</li>
 											<li style="font-size: smaller">Improved test diagnostics: failed embedded tests now save a memory log in every suite sharing one teardown, and nightly test logs are searchable in Splunk with a usage guide.</li>
 										</ul>
 									</div>
